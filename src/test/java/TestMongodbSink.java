@@ -67,7 +67,7 @@ public class TestMongodbSink {
 		        Event event = new SimpleEvent();
 		        eventDate.clear();
 		        eventDate.set(2011, i, i, i, 0); // yy mm dd
-		        String body = "{\"stamp\":\"2012-08-17 16:57:56 202\",\"playerId\":2367,\"playerName\":\"老光子\",\"actionName\":\"犯罪\",\"actionId\":4,\"deviceId\":\"89cc297b9232c0994872da49b173cebe31446544\",\"logType\":2162816,\"properties\":{\"awardGoodsType\":753,\"result\":0,\"awardMoney\":0,\"costBrave\":1,\"awardGoodsCategory\":8,\"awardGoodsAmount\":1,\"awardExp\":6,\"isLostToolFlag\":false,\"crimeTypeId\":102}}";
+		        String body = "{\"stamp\":\"2012-08-17 16:57:56 202\",\"playerId\":2367,\"playerName\":\"XXX\",\"actionName\":\"XXX\",\"actionId\":4,\"deviceId\":\"89cc297b9232c0994872da49b173cebe31446544\",\"logType\":2162816,\"properties\":{\"awardGoodsType\":753,\"result\":0,\"awardMoney\":0,\"costBrave\":1,\"awardGoodsCategory\":8,\"awardGoodsAmount\":1,\"awardExp\":6,\"isLostToolFlag\":false,\"crimeTypeId\":102}}";
 		        event.setBody(body.getBytes());
 		        bodies.add(body);
 		        channel.put(event);
